@@ -3,7 +3,12 @@ import cors from 'cors';
 
 export const app = express();
 
-app.use(cors({ origin: true }));
+app.use(
+  cors({
+    origin: "http://localhost:3000/", // Adjust the origin as needed
+    credentials: true, // Allow credentials (cookies) to be sent cross-origin
+  })
+);
 
 app.use(express.json());
 app.use(express.raw({ type: 'application/vnd.custom-type' }));
