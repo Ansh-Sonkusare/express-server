@@ -8,10 +8,11 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "noImplicitReturns": true,
+    "noImplicitReturns": false,
     "noUnusedLocals": true,
     "noImplicitAny": false,
     "sourceMap": true,
+
     "lib": ["ESNext"],
     "strictNullChecks": false
   },
