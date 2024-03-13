@@ -5,7 +5,7 @@ export const app = express();
 
 app.use(
   cors({
-    origin: 'http://localhost:3000/', // Adjust the origin as needed
+    origin: 'http://localhost:3000', // Adjust the origin as needed
     credentials: true // Allow credentials (cookies) to be sent cross-origin
   })
 );
