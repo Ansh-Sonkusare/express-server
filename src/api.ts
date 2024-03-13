@@ -45,6 +45,7 @@ app.post('/login', (req, res) => {
 // Protected POST endpoint
 app.post('/protected-post', (req, res) => {
   // Check if the user is authenticated (replace with your actual authorization logic)
+  return res.status(401).json({message:req.cookies})
   if (!req.cookies.authCookie) {
     return res.status(401).json({ message: 'Unauthorized' });
   }
